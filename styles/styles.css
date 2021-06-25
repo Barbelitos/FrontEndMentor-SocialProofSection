@@ -23,6 +23,26 @@ body {
   padding: 10px;
 }
 
+.bg__top__mobile {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.bg__top__desktop {
+  display: none;
+}
+
+.bg__bottom__mobile {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.bg__bottom__desktop {
+  display: none;
+}
+
 .title__container {
   color: var(--dark-grayish-magenta);
   text-align: center;
