@@ -24,9 +24,10 @@ body {
 }
 
 .bg__top__mobile {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
+  z-index: -100;
 }
 
 .bg__top__desktop {
@@ -36,7 +37,8 @@ body {
 .bg__bottom__mobile {
   position: fixed;
   width: 100%;
-  bottom: 0;
+  bottom: -50%;
+  z-index: -100;
 }
 
 .bg__bottom__desktop {
@@ -135,6 +137,30 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 30px 100px;
+  }
+
+  .bg__top__mobile {
+    display: none;
+  }
+
+  .bg__top__desktop {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: -70%;
+    z-index: -100;
+  }
+
+  .bg__bottom__mobile {
+    display: none;
+  }
+
+  .bg__bottom__desktop {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: -20%;
+    z-index: -100;
   }
 
   .title__container {
