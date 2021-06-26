@@ -76,6 +76,10 @@ body {
   border-radius: 7px;
 }
 
+.stars {
+  white-space: nowrap;
+}
+
 .stars__text {
   font-size: 13px;
   font-weight: 700;
